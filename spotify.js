@@ -81,11 +81,15 @@ songItemPlay.forEach((element)=>{
             audioElement.play();
             e.target.classList.remove("fa-play-circle")
             e.target.classList.add("fa-pause-circle")
+            masterPlay.classList.add('fa-pause-circle')
+            masterPlay.classList.remove('fa-play-circle')
         }
         else{
             audioElement.pause();
             e.target.classList.remove("fa-pause-circle")
             e.target.classList.add("fa-play-circle")
+            masterPlay.classList.remove('fa-pause-circle')
+            masterPlay.classList.add('fa-play-circle')
         }
     })
 })
